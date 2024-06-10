@@ -38,7 +38,8 @@ public class ChatSolicitacoesColaboraresController {
             List<ChatSolicitacoesColaboradoresDTO> messages = chatSolicitacoesColaboradoresService.findByIdVinculado(id);
             return ResponseEntity.ok(messages);
         } catch (EntityNotFoundException e) {
-            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+            ErrorResponses errorResponses = new ErrorResponses(e.getMessage());
+            return ResponseEntity.badRequest().body(errorResponses);
         }
     }
 
