@@ -19,7 +19,7 @@ public class ChatSolicitacoesColaboradoresServiceImpl implements ChatSolicitacoe
     ChatSolicitacoesColaboradoresRepository chatSolicitacoesColaboradoresRepository;
 
     @Override
-    public List<ChatSolicitacoesColaboradoresDTO> findByIdVinculado(String idVinculado) {
+    public List<ChatSolicitacoesColaboradoresDTO> findByIdVinculado(Integer idVinculado) {
         List<ChatSolicitacoesColaboradores> chatMessages = chatSolicitacoesColaboradoresRepository.findByIdVinculado(idVinculado);
         return chatMessages.stream()
                 .map(ChatSolicitacoesColaboradoresDTO::new)
