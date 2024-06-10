@@ -18,7 +18,7 @@ public class ChatSolicitacoesColaboradores {
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Long id;
+        private Integer id;
 
         @Column(name="message")
         private String message;
