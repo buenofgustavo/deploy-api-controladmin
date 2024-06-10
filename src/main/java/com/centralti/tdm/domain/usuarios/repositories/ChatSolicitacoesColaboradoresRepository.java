@@ -7,6 +7,6 @@ import java.util.List;
 
 public interface ChatSolicitacoesColaboradoresRepository extends JpaRepository<ChatSolicitacoesColaboradores, String> {
 
-    List<ChatSolicitacoesColaboradores> findByIdVinculado(String id_vinculado);
+    List<ChatSolicitacoesColaboradores> findByIdVinculado(Integer id_vinculado);
 
 }
