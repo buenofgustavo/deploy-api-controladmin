@@ -18,13 +18,13 @@ public class ChatSolicitacoesColaboradores {
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Integer id;
+        private Long id;
 
         @Column(name="message")
         private String message;
 
         @Column(name="id_vinculado")
-        private String idVinculado;
+        private Integer idVinculado;
 
         @Column(name="user_vinculado")
         private String userVinculado;

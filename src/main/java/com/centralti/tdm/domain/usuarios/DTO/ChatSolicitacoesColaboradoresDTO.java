@@ -8,7 +8,7 @@ public record ChatSolicitacoesColaboradoresDTO
 (
             String message,
             String usuario,
-            String idVinculado,
+            Integer idVinculado,
             LocalDateTime datahora,
             String nomeUser
 
