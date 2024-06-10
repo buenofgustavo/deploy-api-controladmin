@@ -9,7 +9,7 @@ import java.util.List;
 @Service
 public interface ChatSolicitacoesColaboradoresService {
 
-    List<ChatSolicitacoesColaboradoresDTO> findByIdVinculado(String idVinculado);
+    List<ChatSolicitacoesColaboradoresDTO> findByIdVinculado(Integer idVinculado);
     void createChatMessage(ChatSolicitacoesColaboradoresDTO chatSolicitacoesColaboradoresDTO);
 
 }
