@@ -32,7 +32,7 @@ public class ChatSolicitacoesColaboraresController {
         }
     }
 
-    @GetMapping("{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<?> getMessagesByNfd(@PathVariable Integer id) {
         try {
             List<ChatSolicitacoesColaboradoresDTO> messages = chatSolicitacoesColaboradoresService.findByIdVinculado(id);
